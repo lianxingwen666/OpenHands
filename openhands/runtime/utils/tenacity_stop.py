@@ -1,3 +1,16 @@
+"""
+OpenHands 工具函数模块
+================
+
+技术栈：
+- 系统编程
+- 工具函数
+- 辅助功能
+
+功能说明：
+提供系统级工具函数和辅助功能
+"""
+
 from tenacity import RetryCallState
 from tenacity.stop import stop_base
 

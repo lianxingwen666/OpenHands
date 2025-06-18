@@ -1,3 +1,16 @@
+"""
+OpenHands Agent_Skills 插件
+=========================
+
+技术栈：
+- 插件架构
+- 动态加载
+- 扩展机制
+
+功能说明：
+agent_skills功能的插件实现，提供可扩展的功能模块
+"""
+
 from inspect import signature
 
 from openhands.runtime.plugins.agent_skills import file_ops, file_reader

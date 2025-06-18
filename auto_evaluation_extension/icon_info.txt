@@ -1,0 +1,29 @@
+图标文件说明
+=============
+
+由于无法直接创建图像文件，请按以下方式创建图标：
+
+1. 创建以下尺寸的PNG图标文件：
+   - icon16.png (16x16像素)
+   - icon48.png (48x48像素)
+   - icon128.png (128x128像素)
+
+2. 图标设计建议：
+   - 主色调：蓝色 (#007bff)
+   - 图案：可以是书本、笔、或者"评"字
+   - 风格：简洁、现代
+   - 背景：透明或白色
+
+3. 在线图标生成工具：
+   - https://www.favicon-generator.org/
+   - https://realfavicongenerator.net/
+   - https://www.canva.com/
+
+4. 或者使用以下简单的SVG代码生成：
+
+<svg width="128" height="128" xmlns="http://www.w3.org/2000/svg">
+  <rect width="128" height="128" rx="20" fill="#007bff"/>
+  <text x="64" y="80" font-family="Arial" font-size="60" fill="white" text-anchor="middle">评</text>
+</svg>
+
+将此SVG保存为文件，然后转换为PNG格式的不同尺寸即可。

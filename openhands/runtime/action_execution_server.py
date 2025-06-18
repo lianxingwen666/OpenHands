@@ -1,8 +1,25 @@
 """
-This is the main file for the runtime client.
-It is responsible for executing actions received from OpenHands backend and producing observations.
+OpenHands Action Execution Server - 动作执行服务器
+===============================================
 
-NOTE: this will be executed inside the docker sandbox.
+技术栈：
+- FastAPI: 现代高性能Web框架，用于构建REST API
+- Uvicorn: ASGI服务器，支持异步处理
+- AsyncIO: 异步编程框架，提高并发性能
+- Pydantic: 数据验证和序列化
+- Playwright: 浏览器自动化（用于web交互）
+- IPython: 增强的Python解释器
+- Docker: 容器化执行环境
+
+功能说明：
+这是OpenHands运行时系统的核心组件，负责：
+1. 接收来自OpenHands后端的Action请求
+2. 在沙盒环境中执行各种类型的动作
+3. 返回执行结果的Observation
+4. 管理插件系统和浏览器环境
+5. 提供文件操作和系统交互接口
+
+注意：此服务器运行在Docker沙盒容器内部，提供安全的代码执行环境
 """
 
 import argparse

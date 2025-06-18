@@ -1,3 +1,22 @@
+"""
+OpenHands 浏览器环境管理模块
+==========================
+
+技术栈：
+- Playwright: 现代浏览器自动化框架
+- Selenium WebDriver: 备用浏览器驱动
+- 异步编程: 高性能浏览器操作
+- 截图处理: Base64编码的图像传输
+
+功能说明：
+浏览器环境管理器负责：
+1. 浏览器实例的创建和管理
+2. 网页导航和交互操作
+3. 页面内容提取和截图
+4. JavaScript执行和DOM操作
+5. 浏览器会话的生命周期管理
+"""
+
 import atexit
 import json
 import multiprocessing

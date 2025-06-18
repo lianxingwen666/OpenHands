@@ -1,0 +1,24 @@
+{
+  "manifest_version": 3,
+  "name": "自动评教助手",
+  "version": "1.0",
+  "description": "帮助快速完成课程评教（仅供学习研究）",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": [
+        "*://210.30.204.138/*",
+        "*://210.30.204.138/school/proj/evaluatevl-0/*"
+      ],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "自动评教助手"
+  }
+}

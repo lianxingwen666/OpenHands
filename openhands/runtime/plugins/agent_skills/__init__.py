@@ -1,3 +1,15 @@
+"""
+OpenHands Agent_Skills 模块初始化文件
+==============================
+
+技术栈：
+- Python 模块系统
+- 组件导入管理
+
+功能说明：
+agent_skills模块的初始化和接口定义
+"""
+
 from dataclasses import dataclass
 
 from openhands.events.action import Action

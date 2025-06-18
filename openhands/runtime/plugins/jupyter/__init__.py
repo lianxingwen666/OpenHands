@@ -1,3 +1,15 @@
+"""
+OpenHands Jupyter 模块初始化文件
+=========================
+
+技术栈：
+- Python 模块系统
+- 组件导入管理
+
+功能说明：
+jupyter模块的初始化和接口定义
+"""
+
 import asyncio
 import os
 import subprocess
