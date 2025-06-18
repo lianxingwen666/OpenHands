@@ -1,3 +1,16 @@
+"""
+OpenHands Plugins 插件
+====================
+
+技术栈：
+- 插件架构
+- 动态加载
+- 扩展机制
+
+功能说明：
+plugins功能的插件实现，提供可扩展的功能模块
+"""
+
 from abc import abstractmethod
 from dataclasses import dataclass
 

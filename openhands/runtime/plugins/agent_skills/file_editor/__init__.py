@@ -1,6 +1,13 @@
-"""This file imports a global singleton of the `EditTool` class as well as raw functions that expose
-its __call__.
-The implementation of the `EditTool` class can be found at: https://github.com/All-Hands-AI/openhands-aci/.
+"""
+OpenHands File_Editor 模块初始化文件
+=============================
+
+技术栈：
+- Python 模块系统
+- 组件导入管理
+
+功能说明：
+file_editor模块的初始化和接口定义
 """
 
 from openhands_aci.editor import file_editor

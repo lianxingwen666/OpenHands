@@ -1,8 +1,14 @@
 """
-This module provides a Windows-specific implementation for running commands
-in a PowerShell session using the pythonnet library to interact with the .NET
-PowerShell SDK directly. This aims to provide a more robust and integrated
-way to manage PowerShell processes compared to using temporary script files.
+OpenHands 工具函数模块
+================
+
+技术栈：
+- 系统编程
+- 工具函数
+- 辅助功能
+
+功能说明：
+提供系统级工具函数和辅助功能
 """
 
 import os
