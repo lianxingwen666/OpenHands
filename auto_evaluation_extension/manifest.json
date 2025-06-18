@@ -1,0 +1,26 @@
+{
+  "manifest_version": 3,
+  "name": "自动评教助手",
+  "version": "1.0",
+  "description": "帮助快速完成课程评教（仅供学习研究）",
+  "permissions": [
+    "activeTab",
+    "storage"
+  ],
+  "content_scripts": [
+    {
+      "matches": ["*://210.30.204.138/*"],
+      "js": ["content.js"],
+      "css": ["styles.css"]
+    }
+  ],
+  "action": {
+    "default_popup": "popup.html",
+    "default_title": "自动评教助手"
+  },
+  "icons": {
+    "16": "icon16.png",
+    "48": "icon48.png",
+    "128": "icon128.png"
+  }
+}
