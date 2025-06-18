@@ -1,17 +1,35 @@
 """
-LiteLLM currently have an issue where HttpHandlers are being created but not
-closed. We have submitted a PR to them, (https://github.com/BerriAI/litellm/pull/8711)
-and their dev team say they are in the process of a refactor that will fix this, but
-in the meantime, we need to manage the lifecycle of the httpx.Client manually.
+OpenHands HTTP连接管理模块
+========================
 
-We can't simply pass in our own client object, because all the different implementations use
-different types of client object.
+技术栈：
+- HTTPX: 现代异步HTTP客户端库
+- 异步编程: AsyncIO和协程管理
+- 资源管理: 连接池和生命周期管理
+- 上下文管理器: 自动资源清理
 
-So we monkey patch the httpx.Client class to track newly created instances and close these
-when the operations complete. (Since some paths create a single shared client and reuse these,
-we actually need to create a proxy object that allows these clients to be reusable.)
+功能说明：
+本模块确保HTTPX客户端连接的正确关闭，防止资源泄漏：
 
-Hopefully, this will be fixed soon and we can remove this abomination.
+1. **连接管理**: 自动管理HTTP连接的生命周期
+2. **资源清理**: 确保连接在使用后正确关闭
+3. **异常安全**: 即使在异常情况下也能正确清理资源
+4. **性能优化**: 避免连接泄漏导致的性能问题
+5. **内存管理**: 防止未关闭连接导致的内存泄漏
+
+核心特性：
+- 自动连接关闭机制
+- 异常安全的资源管理
+- 上下文管理器支持
+- 连接池优化
+- 错误处理和恢复
+
+使用场景：
+- HTTP客户端的安全使用
+- 微服务间的通信
+- 外部API调用
+- 资源密集型应用
+- 长时间运行的服务
 """
 
 import contextlib
