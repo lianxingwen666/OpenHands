@@ -17,10 +17,5 @@
   "action": {
     "default_popup": "popup.html",
     "default_title": "自动评教助手"
-  },
-  "icons": {
-    "16": "icon16.png",
-    "48": "icon48.png",
-    "128": "icon128.png"
   }
 }
