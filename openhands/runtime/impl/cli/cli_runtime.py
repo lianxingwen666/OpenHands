@@ -1,6 +1,14 @@
 """
-This runtime runs commands locally using subprocess and performs file operations using Python's standard library.
-It does not implement browser functionality.
+OpenHands Cli Runtime 实现
+========================
+
+技术栈：
+- Runtime接口实现
+- 异步编程
+- 容器/云平台集成
+
+功能说明：
+cli平台的Runtime具体实现，提供代码执行环境
 """
 
 import asyncio

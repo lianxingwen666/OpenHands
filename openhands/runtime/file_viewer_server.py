@@ -1,6 +1,24 @@
 """
-A tiny, isolated server that provides only the /view endpoint from the action execution server.
-This server has no authentication and only listens to localhost traffic.
+OpenHands 文件查看器服务器
+========================
+
+技术栈：
+- FastAPI: 轻量级Web框架，用于构建文件查看API
+- Uvicorn: ASGI服务器，支持高性能HTTP服务
+- Threading: 多线程支持，允许服务器在后台运行
+- HTML生成: 动态生成文件查看器界面
+
+功能说明：
+这是一个独立的、轻量级的文件查看服务器，提供：
+1. 安全的文件查看功能（仅限localhost访问）
+2. 支持多种文件格式的在线预览
+3. 无需认证的本地文件访问
+4. 与主要的action execution server隔离运行
+
+安全特性：
+- 仅接受来自localhost的请求
+- 路径验证和安全检查
+- 目录遍历攻击防护
 """
 
 import os

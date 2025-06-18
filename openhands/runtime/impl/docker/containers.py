@@ -1,3 +1,15 @@
+"""
+OpenHands Containers 模块
+=======================
+
+技术栈：
+- Python编程
+- 模块化设计
+
+功能说明：
+containers.py的功能实现模块
+"""
+
 import docker
 
 

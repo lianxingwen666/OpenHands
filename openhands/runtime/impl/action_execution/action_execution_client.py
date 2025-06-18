@@ -1,3 +1,16 @@
+"""
+OpenHands Action执行客户端
+=====================
+
+技术栈：
+- HTTP客户端
+- 异步通信
+- Action/Observation模式
+
+功能说明：
+负责与ActionExecutionServer通信，执行各种Action
+"""
+
 import os
 import tempfile
 import threading

@@ -1,3 +1,16 @@
+"""
+OpenHands 服务器实现
+===============
+
+技术栈：
+- FastAPI框架
+- 异步处理
+- REST API
+
+功能说明：
+提供HTTP API服务，处理客户端请求
+"""
+
 #!/usr/bin/env python3
 
 import asyncio

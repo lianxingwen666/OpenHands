@@ -1,3 +1,21 @@
+"""
+OpenHands Docker Runtime 构建器
+=============================
+
+技术栈：
+- Docker API: 容器镜像构建和管理
+- Dockerfile生成: 动态构建脚本创建
+- 多阶段构建: 优化镜像大小
+- 缓存机制: 提高构建效率
+
+功能说明：
+Docker构建器实现具体的镜像构建逻辑：
+1. 基础镜像选择和配置
+2. 依赖包安装和环境设置
+3. 用户权限和安全配置
+4. 构建优化和缓存策略
+"""
+
 import datetime
 import os
 import subprocess
