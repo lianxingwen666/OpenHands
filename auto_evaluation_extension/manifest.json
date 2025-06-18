@@ -9,7 +9,10 @@
   ],
   "content_scripts": [
     {
-      "matches": ["*://210.30.204.138/*"],
+      "matches": [
+        "*://210.30.204.138/*",
+        "*://210.30.204.138/school/proj/evaluatevl-0/*"
+      ],
       "js": ["content.js"],
       "css": ["styles.css"]
     }

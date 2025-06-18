@@ -97,7 +97,18 @@
     </div>
 
     <div class="config-section">
-        <label for="rating">评分等级：</label>
+        <label for="strategy">评分策略：</label>
+        <select id="strategy">
+            <option value="realistic">🎯 现实策略 (推荐)</option>
+            <option value="positive">😊 积极策略</option>
+            <option value="conservative">🛡️ 保守策略</option>
+            <option value="balanced">⚖️ 平衡策略</option>
+            <option value="custom">🎛️ 固定分数</option>
+        </select>
+    </div>
+
+    <div class="config-section" id="customRatingGroup" style="display: none;">
+        <label for="rating">固定评分：</label>
         <select id="rating">
             <option value="5">5 - 非常满意</option>
             <option value="4">4 - 满意</option>
@@ -105,6 +116,12 @@
             <option value="2">2 - 不满意</option>
             <option value="1">1 - 非常不满意</option>
         </select>
+    </div>
+
+    <div class="config-section" id="strategyInfo">
+        <div style="font-size: 11px; color: #666; background: #f8f9fa; padding: 8px; border-radius: 3px;">
+            <strong>现实策略：</strong>以4分为主，其他分数合理分布，避免全部相同分数
+        </div>
     </div>
 
     <div class="config-section">
@@ -124,6 +141,6 @@
 
     <div id="status" class="status" style="display: none;"></div>
 
-    <script src="popup.js"></script>
+    <script src="popup_smart.js"></script>
 </body>
 </html>
